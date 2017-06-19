@@ -1,0 +1,21 @@
+{
+  "name": "censes-network",
+  "version": "0.0.1",
+  "description": "Censes network",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.2",
+    "truffle": "https://github.com/ConsenSys/truffle.git#3.1.9"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "0.0.3"
+  }
+}
