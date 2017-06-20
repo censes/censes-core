@@ -4,6 +4,8 @@ import "./Ticket.sol";
 
 contract TicketSale is Ownable {
 
+  string public version = 'dev-0.1';
+
   uint public price = 0;
   Ticket public ticketToken;
 

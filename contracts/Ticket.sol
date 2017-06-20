@@ -7,6 +7,8 @@ import "zeppelin/SafeMath.sol";
 contract Ticket is Ownable, StandardToken {
     using SafeMath for uint;
 
+    string public version = 'dev-0.1';
+
     string public name;
     string public symbol;
     uint public supplyCeiling;
