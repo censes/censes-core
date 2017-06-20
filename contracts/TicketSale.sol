@@ -40,8 +40,8 @@ contract TicketSale is Ownable {
   }
 
   modifier only_exact_amount() {
-    require(priceFor(ticketsFor(msg.value)) == msg.value);
+    require(priceFor(ticketsFor(msg.value)) <= msg.value);
     _;
+    msg.sender.transfer(msg.value - ticketsFor(msg.value));
   }
-
 }
