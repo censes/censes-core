@@ -32,6 +32,7 @@ contract Ticket is Ownable, StandardToken {
     }
 
     function generateTickets(address _receiver, uint _value) onlyOwner {
+      if (totalSupply + _value > supplyCeiling) throw;
       balances[_receiver] = balances[_receiver].add(_value);
     }
 }
