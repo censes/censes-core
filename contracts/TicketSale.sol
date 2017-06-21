@@ -40,7 +40,7 @@ contract TicketSale is Ownable {
   }
 
   modifier only_exact_amount() {
-    uint totalPrice = priceFor(ticketsFor(msg.value))
+    uint totalPrice = priceFor(ticketsFor(msg.value));
     _;
     if(totalPrice >= msg.value) {
       msg.sender.transfer(msg.value - totalPrice);

@@ -10,7 +10,7 @@ module.exports = {
     development: {
       host: "localhost",
       port: 8545,
-      // provider: require('ethereumjs-testrpc').provider({ gasLimit: 1e8 }),
+      provider: require('ethereumjs-testrpc').provider({ gasLimit: 1e8 }),
       network_id: "*" // Match any network id
     },
     ropsten: {
